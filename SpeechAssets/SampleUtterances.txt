@@ -1,0 +1,6 @@
+LatestNewsIntent  what is the latest on {Topic}
+LatestNewsIntent  what is the latest on the {Topic}
+LatestNewsIntent  what is the latest news on {Topic}
+LatestNewsIntent  what is the latest news on the {Topic}
+LatestNewsIntent  what is the latest news about {Topic}
+LatestNewsIntent  what is the latest news about the {Topic}

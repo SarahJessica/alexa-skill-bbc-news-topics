@@ -1,0 +1,19 @@
+{
+  "name": "bbc-topics-amazon-echo-skill",
+  "version": "0.0.1",
+  "description": "BBC Topics Pages VUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "amazon",
+    "echo"
+  ],
+  "author": "SJ Leivers",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0"
+  }
+}
