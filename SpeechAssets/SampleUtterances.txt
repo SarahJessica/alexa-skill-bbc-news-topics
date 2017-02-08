@@ -4,3 +4,8 @@ LatestNewsIntent  what is the latest news on {Topic}
 LatestNewsIntent  what is the latest news on the {Topic}
 LatestNewsIntent  what is the latest news about {Topic}
 LatestNewsIntent  what is the latest news about the {Topic}
+
+AMAZON.HelpIntent how do i use this
+AMAZON.HelpIntent assistance please
+AMAZON.HelpIntent i need assistance
+AMAZON.HelpIntent help

@@ -46,4 +46,4 @@ module.exports= {
     });
   }
 }
-module.exports.getLatest();
+

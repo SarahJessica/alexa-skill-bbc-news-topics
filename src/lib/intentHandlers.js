@@ -1,9 +1,14 @@
 'use strict';
 
 const TOPICPAGES = require('./topicPagesClient');
-
-var LatestNewsResponseFunction = function(topic){
-  TOPICPAGES.getLatest(topic);
+const TOPICMASTERLIST = function() {
+    var topics = require('../../topicMasterList');
+    return JSON.parse(topics);
 }
 
-exports.register = LatestNewsResponseFunction;
+var getLatestNews = function (topix) {
+    const topicUuid = TOPICMASTERLIST.Topics[topix].getValue();
+    TOPICPAGES.getLatest(topicUuid);
+};
+
+exports.latestNewsResponseFunction = getLatestNews;
