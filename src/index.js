@@ -1,8 +1,8 @@
 'use strict';
 
 const AlexaSkill = require('./AlexaSkill');
-const AlexaAnswer = require('.lib/alexaResponseObjectConstructors.js');
-const INTENTS = require('.lib/intentHandlers.js');
+const AlexaAnswer = require('./lib/alexaResponseObjectConstructors.js');
+const INTENTS = require('./lib/intentHandlers.js');
 
 const APP_ID = undefined; //replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
 
@@ -30,7 +30,7 @@ bbcNewsTopicsSkill.prototype.eventHandlers.onLaunch = function (launchRequest, s
 bbcNewsTopicsSkill.prototype.intentHandlers = {
   "LatestNewsIntent": function (intent, session, response) {
     const topic = intent.slots.Topic.value.toLowerCase();
-    INTENTS.latestNewsResponseFunction(topic, response);
+    const latestNews = INTENTS.latestNewsResponseFunction(topic, response);
   }
 };
 

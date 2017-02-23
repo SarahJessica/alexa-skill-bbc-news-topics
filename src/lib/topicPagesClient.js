@@ -19,18 +19,15 @@ module.exports= {
           $('.lx-stream__feed').filter(function() {
               var title;
               var summary;
-              var mediaSummary;
+
                   $('.lx-stream-post--has-meta').filter(function() {
 
                       title = $('.lx-stream-post__header-title').eq(0).text();
                       summary= $('.gel-body-copy').eq(0).text();
-                      //summary = $('.qa-sty-summary').eq(0).text();
-                      //mediaSummary = $('.lx-media-asset__summary').eq(0).text();
 
                       json = {
                           "title" : title,
-                          "summary" : summary,
-                          "mediaSummary" : mediaSummary
+                          "summary" : summary
                       };
                       return json
                   });
