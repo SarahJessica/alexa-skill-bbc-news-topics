@@ -30,10 +30,9 @@ bbcNewsTopicsSkill.prototype.eventHandlers.onLaunch = function (launchRequest, s
 bbcNewsTopicsSkill.prototype.intentHandlers = {
   "LatestNewsIntent": function (intent, session, response) {
     const topic = intent.slots.Topic.value.toLowerCase();
-    const latestNews = INTENTS.latestNewsResponseFunction(topic, response);
+    INTENTS.latestNewsResponseFunction(topic, response);
   }
 };
-
 
 bbcNewsTopicsSkill.prototype.eventHandlers.onSessionEnded = function (sessionEndedRequest, session) {
   console.log('bbcNewsTopicsSkill onSessionEnded requestId: ' + sessionEndedRequest.requestId + ', sessionId: ' + session.sessionId);
